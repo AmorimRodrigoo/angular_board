@@ -1,0 +1,29 @@
+.big-card{
+    border: solid white 2px;
+    height:400px;
+    width:400px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.big-card-title > h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.big-card-resume > p{
+    color: grey;
+    margin-top: 10px;
+}
+
+.big-card-picture > img{
+    width: 100%;
+    width:400px;
+    
+}
