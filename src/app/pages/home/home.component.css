@@ -1,10 +1,6 @@
 .articles{
     margin-top: 20px;
-
     display: flex;
     flex-direction: row;
-}
-
-.articles-minor{
-
+    justify-content: center;
 }
