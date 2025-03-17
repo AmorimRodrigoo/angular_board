@@ -1,59 +1,52 @@
-# AngularBlog
+# JustSport Blog
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/AmorimRodrigoo/dslist/blob/main/LICENSE) 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+# Sobre o projeto
 
-## Development server
+JustSport Blog é uma aplicação Front-End Rest construída durante o desafio de projeto do  **DecolaTech** , evento organizado pela  DIO em parceria com a Avanade 
 
-To start a local development server, run:
+A aplicação consiste em um blog minimalista, com o intuito de demonstrar os conhecimentos adquiridos no curso, onde é possivel observar notícias do mundo dos esportes, que estão separadas por cards.
+
+# Tecnologias ultilizadas
+- TypeScript
+- HTML
+- CSS
+- Angular 19
+
+
+
+## Servidor de desenvolvimento
+
+Para iniciar um servidor de desenvolvimento local, execute:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Quando o servidor estiver em execução, abra seu navegador e navegue para `http://localhost:4200/`. O aplicativo será recarregado automaticamente sempre que você modificar qualquer um dos arquivos de origem.
+## Andaimes de código
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+O Angular CLI  inclui poderosas ferramentas de andaime de código. Para gerar um novo componente, execute:
 
 ```bash
 ng generate component component-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para uma lista completa de esquemas disponíveis (como `components`, `directives`, ou `pipes`), execute:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+## Construção
 
-To build the project run:
+Para construir a execução do projeto:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+## Recursos Adicionais 
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para obter mais informações sobre o uso da CLI angular, incluindo referências detalhadas de comando, visite a página [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) .
