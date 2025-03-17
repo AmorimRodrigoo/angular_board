@@ -7,9 +7,7 @@
     align-items: center;
 }
 
-.content-cover{
-        
-}
+
 
 .content-cover > img{
    width: 500px;
@@ -26,6 +24,7 @@
     margin-top: 20px;
     margin-right: 10px;
     margin-left: 10px;
+    margin-bottom: 15px;
     
 }
 
