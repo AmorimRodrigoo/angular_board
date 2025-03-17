@@ -13,6 +13,8 @@ export class BigCardComponent {
     bigCardTitle:string = ""
     @Input()
     bigCardResume:string = ""
+    @Input()
+    id:string = "0";
 
   
     constructor(){}
