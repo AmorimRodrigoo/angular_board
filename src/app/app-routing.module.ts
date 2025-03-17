@@ -6,11 +6,11 @@ import { ContentComponent } from './pages/content/content.component';
 const routes: Routes = [
     {
       path:'',
-      component:HomeComponent,
+      component: HomeComponent,
     },
     {
       path:'content/:id',
-      component:ContentComponent
+      component: ContentComponent
 
     }
 ];

@@ -13,6 +13,8 @@ export class SmallCardComponent {
     smallCardTitle:string = ""
     @Input()
     smallCardResume:string = ""  
+    @Input()
+    id:string = "0";
   
   
   constructor(){}

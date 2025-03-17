@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { dataFake } from '../../data/data-fake';
 
 @Component({
   selector: 'app-content',
@@ -6,10 +8,28 @@ import { Component } from '@angular/core';
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
 })
-export class ContentComponent {
-  contentCover:string = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYcvsnOcF0qztWlB4zcOJJaqlsyGl4M27U8Q&s"
-  contentTitle:string = "4.000 vezes Curry!"
-  contentDescription:string = "O super astro do Golden State Warriors, Stephen Curry, continua a bater recorde e redefinir os limites do basquete. Bem como, nesta quinta-feira (13), ele se tornou o primeiro jogador da NBA a atingir a impressionante marca de 4.000 cestas de três pontos, um feito que ele próprio nunca imaginou ser possível."
+export class ContentComponent implements OnInit {
+  contentCover:string = ""
+  contentTitle:string = ""
+  contentDescription:string = ""
+  private id:string | null= "0";
 
-  constructor(){}
+  constructor(
+    private route: ActivatedRoute
+  ){}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(value =>
+      this.id = value.get("id")
+    )
+    this.setValuesToComponent(this.id)
+  }
+
+  setValuesToComponent(id:string | null) {
+     const result = dataFake.filter(article => article.id == id)[0]
+
+      this.contentTitle = result.title
+      this.contentDescription = result.description 
+      this.contentCover = result.contentCover
+}
 }
